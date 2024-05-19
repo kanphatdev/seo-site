@@ -53,6 +53,7 @@ const Drawer = ({ children }: DrawerProps) => {
               />
             </svg>
           </button>
+          
         </div>
         <nav className="flex-1 overflow-y-auto mt-2">
           <p className="capitalize mx-3 text-blue-500 font-bold">menu</p>
@@ -143,8 +144,7 @@ const Drawer = ({ children }: DrawerProps) => {
       {/* Main content */}
       <div className="flex-1 flex flex-col lg:ml-64">
         {/* Navbar */}
-        <header className="flex items-center justify-between h-16 bg-white shadow px-6">
-          <button
+        <header className="flex items-center justify-between h-16 bg-white shadow px-6"><button
             className="lg:hidden text-gray-500 focus:outline-none focus:text-gray-600"
             onClick={toggleSidebar}
           >
@@ -163,6 +163,10 @@ const Drawer = ({ children }: DrawerProps) => {
               />
             </svg>
           </button>
+          <div className="cursor-pointer bg-gray-300 capitalize text-blue-500 rounded-md shadow-md px-4 py-2 sm:py-1 sm:px-2 md:py-2 md:px-4 md:mx-2">
+          site SEO / home  
+          </div>
+          
           <div className="relative w-full max-w-xl ml-auto">
             <input
               type="text"
