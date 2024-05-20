@@ -1,6 +1,7 @@
 "use client";
 
 import Drawer from "@/components/Drawer";
+import Health from "@/components/Health";
 import State from "@/components/State";
 
 export default function Home() {
@@ -16,8 +17,8 @@ export default function Home() {
           </div>
           <div className="">
             <div className=" bg-red-400 my-4 flex gap-4 justify-between py-8 px-3">
-              <div className="flex justify-center items-center">
-                seo health
+              <div className="flex justify-center items-center ">
+                <Health/>
               </div>
               <div className="">
                 links
