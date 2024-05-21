@@ -1,4 +1,10 @@
-import { EllipsisVertical, Heart, Shield } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  EllipsisVertical,
+  Heart,
+  Shield,
+} from "lucide-react";
 import React from "react";
 
 const Health = () => {
@@ -41,7 +47,17 @@ const Health = () => {
             <p className="capitalize">page</p>
           </div>
         </div>
-        <div className="">button</div>
+        <div className="my-3">
+          <div className="flex gap-3 items-center">
+            <button className="cursor-pointer bg-gray-200 capitalize  rounded-md shadow-md px-4 py-2 sm:py-1 sm:px-2 md:py-2 md:px-4 md:mx-2">
+              <ChevronLeft />
+            </button>
+            <h2 className="">2</h2>
+            <button className="cursor-pointer bg-gray-200 capitalize  rounded-md shadow-md px-4 py-2 sm:py-1 sm:px-2 md:py-2 md:px-4 md:mx-2">
+              <ChevronRight />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
