@@ -4,6 +4,7 @@ import Drawer from "@/components/Drawer";
 import Health from "@/components/Health";
 import SeoLinks from "@/components/SeoLinks";
 import State from "@/components/State";
+import Table from "@/components/Table";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
                 <SeoLinks/>
               </div>
             </div>
-            <div className="bg-red-400 my-4 flex gap-4  py-8 px-3"></div>
+           
           </div>
         </div>
       </main>

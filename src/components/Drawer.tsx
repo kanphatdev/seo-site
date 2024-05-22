@@ -1,5 +1,6 @@
 "use client";
 import { BarChartBig, Ellipsis, FileImage, GanttChart, Globe, LayoutGrid, PieChart, Settings, TableProperties, TriangleAlert } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface DrawerProps {
@@ -57,62 +58,62 @@ const Drawer = ({ children }: DrawerProps) => {
         </div>
         <nav className="flex-1 overflow-y-auto mt-2">
           <p className="capitalize mx-3 text-blue-500 font-bold">menu</p>
-          <a
-            href="#"
+          <Link
+            href="/"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "overview" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("overview")}
           >
             overview <LayoutGrid />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/issues"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "issues" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("issues")}
           >
             issues <TriangleAlert />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/crawler"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "crawler" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("crawler")}
           >
             crawler <Ellipsis />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/content"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "content" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("content")}
           >
             content <TableProperties />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/serve"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
-              activeItem === "serp" ? "bg-blue-100 text-blue-500" : ""
+              activeItem === "Serp" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("serp")}
           >
             serp <BarChartBig />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/speed"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "pagespeed" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("pagespeed")}
           >
             pagespeed <GanttChart />
-          </a>
+          </Link>
           <a
-            href="#"
+            href="/pic"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "image" ? "bg-blue-100 text-blue-500" : ""
             }`}
@@ -120,24 +121,24 @@ const Drawer = ({ children }: DrawerProps) => {
           >
             image <FileImage />
           </a>
-          <a
-            href="#"
+          <Link
+            href="/uptime"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "uptime" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("uptime")}
           >
             uptime <PieChart />
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/setting"
             className={`capitalize px-4 py-2 hover:bg-gray-100 flex justify-between ${
               activeItem === "setting" ? "bg-blue-100 text-blue-500" : ""
             }`}
             onClick={() => handleMenuItemClick("setting")}
           >
             setting <Settings />
-          </a>
+          </Link>
         </nav>
       </div>
 
